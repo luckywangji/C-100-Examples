@@ -5,7 +5,7 @@
 
 #include <stdio.h>
 
-int foo(int days)
+int PaechCount(int days)
 {
 	if(days == 1)
 	{
@@ -13,15 +13,15 @@ int foo(int days)
 	}
 	else
 	{
-		return (foo(days - 1) + 1) * 2;
+		return (PaechCount(days - 1) + 1) * 2;
 	}
 } 
 
 int main()
 {
-	int num;
-	num = foo(10);
-	printf("%d", num);
+	int peach_sum;
+	peach_sum = PaechCount(10);
+	printf("%d", peach_sum);
 	return 0;
 }
 
